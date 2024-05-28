@@ -93,10 +93,12 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   --background-color: rgba(255, 255, 255, 0);
+  
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--background-color); /* change to below for adding background to navbar */ 
+  /* background-color:var(--nav-dropdown-hover-color); */
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -735,8 +737,8 @@ section,
 
 .hero .info {
   position: relative;
-  inset: 0;
-  z-index: 3;
+  inset: 1;
+  z-index: 13;
   padding: 140px 0 60px 0;
 }
 
@@ -775,7 +777,7 @@ section,
 }
 
 .hero .info p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--default-color), transparent 100%);
   font-size: 18px;
 }
 
@@ -825,7 +827,7 @@ section,
 
 .hero .carousel-item::before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  background-color: color-mix(in srgb, var(--background-color), transparent 100%); /* Changed from 30% to 100% */
   position: absolute;
   inset: 0;
   z-index: 2;
