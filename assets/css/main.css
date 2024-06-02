@@ -412,7 +412,7 @@ h6 {
   background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
-  padding-bottom: 50px;
+  padding-bottom: 01px;
   position: relative;
 }
 
@@ -481,7 +481,7 @@ h6 {
 }
 
 .footer .footer-links {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .footer .footer-links ul {
@@ -1188,7 +1188,7 @@ section,
 }
 
 .alt-services .icon-box {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .alt-services .icon-box i {
@@ -1729,8 +1729,8 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  /* object-fit: cover;
+  object-position: center; */
   z-index: 1;
 }
 
