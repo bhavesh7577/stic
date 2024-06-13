@@ -139,6 +139,13 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
+/* .mobile-nav-toggle{
+  border: 1px solid white;
+    padding: 3px 1px 1px 10px;
+    border-radius: 9px;
+} */
+
 /* Desktop Navigation */
 @media (min-width: 1200px) {
   .navmenu {
@@ -275,6 +282,18 @@ h6 {
   }
 }
 
+.blink {
+  animation: blinker 1.5s linear infinite;
+  color: red;
+  font-family: sans-serif;
+}
+
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -284,6 +303,9 @@ h6 {
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
+    border: 1px solid white;
+    padding: 0em 0.4em;
+    border-radius: 10px;
   }
 
   .navmenu {
