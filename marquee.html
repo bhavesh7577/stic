@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Marquee Loop</title>
+<style>
+    .marquee-container {
+        width: 100%; /* Adjust container width as needed */
+        overflow: hidden;
+    }
+
+    .marquee-content {
+        display: inline-block;
+        white-space: nowrap;
+        animation: none; /* Disable CSS animation */
+        position: relative;
+    }
+</style>
+</head>
+<body>
+    <div class="marquee-container">
+        <div class="marquee-content" id="marquee">
+            <!-- Your content goes here -->
+            <span>This is some scrolling text. </span>
+            <span>This is some more scrolling text. </span>
+            <!-- Repeat your content to ensure continuous loop -->
+            <span>This is some scrolling text. </span>
+            <span>This is some more scrolling text. </span>
+        </div>
+    </div>
+
+    <script>
+        const marquee = document.getElementById('marquee');
+        let position = 0;
+        const speed = 2; // Adjust scroll speed as needed (pixels per frame)
+
+        function loop() {
+            position -= speed;
+            marquee.style.left = position + 'px';
+
+            // Reset position when content has scrolled offscreen
+            if (marquee.offsetWidth + position < 0) {
+                position = 0;
+            }
+
+            requestAnimationFrame(loop);
+        }
+
+        loop(); // Start the loop
+    </script>
+</body>
+</html>
