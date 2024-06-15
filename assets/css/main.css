@@ -99,7 +99,7 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color); /* change to below for adding background to navbar */ 
   /* background-color:var(--nav-dropdown-hover-color); */
-  padding: 20px 0;
+  padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -125,6 +125,13 @@ h6 {
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (orientation: portrait) {
+  .header .logo img {
+    max-height: 40px;
+    margin-right: 12px;
+  }
 }
 
 /* Global Header on Scroll
@@ -282,7 +289,7 @@ h6 {
   }
 }
 
-.blink {
+/* .blink {
   animation: blinker 1.5s linear infinite;
   color: red;
   font-family: sans-serif;
@@ -292,7 +299,7 @@ h6 {
   50% {
       opacity: 0;
   }
-}
+} */
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {
@@ -693,7 +700,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 40px 0;
   scroll-margin-top: 92px;
   overflow: clip;
 }
@@ -745,7 +752,11 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
+
+
+
+
+.hero {  /* All devices */
   --default-color: #ffffff;
   --background-color: #000000;
   --heading-color: #ffffff;
@@ -766,7 +777,7 @@ section,
   padding: 140px 0 60px 0;
 }
 
-@media (max-width: 768px),
+@media (max-width: 768px),  /* For tabs */
 (max-height: 480px) {
   .hero .info {
     padding: 100px 50px 60px 50px;
@@ -794,7 +805,7 @@ section,
   margin: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {  /* For tabs and mobiles */
   .hero .info h2 {
     font-size: 36px;
   }
@@ -861,7 +872,7 @@ section,
   justify-content: start;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px) {   /* For pads and desktop */
   .hero .carousel-control-prev {
     padding-left: 15px;
   }
@@ -908,6 +919,14 @@ section,
   opacity: 0.9;
 }
 
+
+@media screen and (orientation: portrait) {
+  .hero{
+    min-height: 40vh;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Get Started Section
 --------------------------------------------------------------*/
@@ -927,7 +946,7 @@ section,
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
+  width: 40px;
   height: 4px;
   background: var(--accent-color);
   left: 0;
