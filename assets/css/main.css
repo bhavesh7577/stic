@@ -457,7 +457,7 @@ h6 {
 }
 
 .footer .footer-top {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .footer .footer-about .logo {
@@ -510,7 +510,7 @@ h6 {
 }
 
 .footer .footer-links {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .footer .footer-links ul {
@@ -550,8 +550,10 @@ h6 {
 }
 
 .footer .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -653,7 +655,8 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 160px 0 60px 0;
+  /* padding: 160px 0 60px 0; */
+  padding: 100px 0 40px 0;
   text-align: center;
   position: relative;
 }
